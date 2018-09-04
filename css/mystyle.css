@@ -24,7 +24,7 @@ span {
 }
 
 .dark.classy-nav-container {
-    background-color: rgba(28, 99, 154, 0.5);
+    background-color: #fec601
 }
 
 .welcome-text.account > h2 {
@@ -56,13 +56,20 @@ span {
 .top-mar {
     margin-top: 80px;
 }
-
+.dark.classy-nav-container a {
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.classynav ul li.megamenu-item > a::after, .classynav ul li.has-down > a::after {
+    color: #000;
+}
 .blog_area {
-    background-color: #145794;
+    background-color: #ffdb6d
 }
 
 .classy-nav-container.classy-sticky {
-    background-color: #1a344c;
+    background-color: #fec601;
 }
 
 .classy-btn {
@@ -169,8 +176,16 @@ span {
 .classy-btn:hover {
     background-color: #5ab7ff;
 }
-
-
+.welcome_slides_area {
+    overflow: hidden;
+    cursor: move;
+    position: relative;
+    z-index: 1;
+    height: 650px;
+}
+#scrollUp {
+    background-color: #fec601;
+}
 
 
 /*RWD*/
