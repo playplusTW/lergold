@@ -85,11 +85,13 @@ span {
 }
 
 .dark .classynav ul li .dropdown {
-    background-color: #145794b8;
+    background-color: #fec601;
 }
 
 .dark .classynav ul li .dropdown li a:hover {
-    background-color: #007bd9;
+    background-color: #c37d02;
+    color: #fff;
+    font-size: 15px;
 }
 .classynav ul li a {
     padding: 0 65px;
@@ -114,7 +116,8 @@ span {
     width: 222px;
 }
 .dark.classy-nav-container a:hover, .dark.classy-nav-container a:focus {
-    color: #7ed7ff;
+    color: #c37d02;
+    font-size: 15px;
 }
 .app-box {
     text-align: center;
@@ -187,8 +190,40 @@ span {
     background-color: #fec601;
 }
 
+.target {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.footer-menu > li > a:hover {
+    color: #fec601;
+}
+
+
+
 
 /*RWD*/
+@media screen and (max-width: 1440px){
+.classynav ul li a {
+    padding: 0 29px;
+    display: block;
+    height: 35px;
+    font-size: 15px;
+    line-height: 34px;
+}
+.project_title h4 {
+    color: #fff;
+    font-size: 20px;
+}
+p {
+    color: #7b7b7b;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+}
+
+
 @media screen and (max-width: 768px){
 .header-area {
     position: fixed;
@@ -199,6 +234,12 @@ span {
 }
 .portfolio_gallery_iteam {
     margin-bottom: 47px;
+}
+p {
+    color: #7b7b7b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
 }
 }
 
@@ -211,5 +252,26 @@ span {
 }
 .welcome-text.account > h2 {
     font-size: 43px;
+}
+.welcome_slides_area:hover .owl-prev {
+    left: -29px;
+}
+.welcome_slides_area:hover .owl-next {
+    right: -29px;
+}
+.contact-info a {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #0984e3;
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.contact-info a > i {
+    display: block;
+    font-size: 52px;
+    margin-bottom: 14px;
+    color: #0984e3;
 }
 }
