@@ -946,14 +946,19 @@
 
     <script>
         $(document).on("click touch", ".classynav a", function(){
-          console.log("Sharon")
-          console.log($(window).width())
           if($(window).width() <= 768){//當視窗小於768時才運作
             $('.classy-menu').removeClass('menu-on');
             $('.navbarToggler').removeClass('active');
           }
         })
   
+        $(window).scroll(function() {
+          if($(window).width() <= 768){//當視窗小於768時才運作
+            $('.classy-menu').removeClass('menu-on');
+            $('.navbarToggler').removeClass('active');
+          }
+        });
+
         // $(function(){ 
         // if($(window).width()<768){ //當視窗小於768時才運作
         // $('.classynav').on('click', function(){
