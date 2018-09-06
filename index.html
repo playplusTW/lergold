@@ -81,7 +81,7 @@
                   </li>
                   <li>
                     <a href="#about">
-                      <i class="fa fa-user mar-rig8" aria-hidden="true" style="color: #c47d01;"></i>
+                      <i class="fa fa-user mar-rig8" aria-hidden="true" style="color: #c47d01;    margin-right: 12px;"></i>
                       關於我們
                     </a>
                   </li>
@@ -945,13 +945,22 @@
     <script src="js/active.js"></script>
 
     <script>
-        $(function(){ 
-        if($(window).width()<768){ //當視窗小於768時才運作
-        $('.navbar a').on('click', function(){
-            $('.navbar-toggle').click();
-          });
-        }
-        });
+        $(document).on("click touch", ".classynav a", function(){
+          console.log("Sharon")
+          console.log($(window).width())
+          if($(window).width() <= 768){//當視窗小於768時才運作
+            $('.classy-menu').removeClass('menu-on');
+            $('.navbarToggler').removeClass('active');
+          }
+        })
+  
+        // $(function(){ 
+        // if($(window).width()<768){ //當視窗小於768時才運作
+        // $('.classynav').on('click', function(){
+        //     $('.classynav').click();
+        //   });
+        // }
+        // });
     </script>
     
 </body>
